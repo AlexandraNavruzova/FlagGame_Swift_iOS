@@ -34,6 +34,9 @@ class ViewController: UIViewController {
 
 
         askQuestion()
+        
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "counter"), style: .plain, target: self, action: #selector(addTapped))
 
     }
     
@@ -82,6 +85,12 @@ class ViewController: UIViewController {
         }
         present(ac, animated: true)
     }
+    @objc func addTapped() {
+        let ac = UIAlertController(title: "Your current score is \(score)", message: "Let's continue the game!", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Play again", style: .default, handler: askQuestion))
+        present(ac, animated: true)
+    }
 
+    
 }
 
