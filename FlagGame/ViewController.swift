@@ -35,7 +35,6 @@ class ViewController: UIViewController {
 
         askQuestion()
         
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "counter"), style: .plain, target: self, action: #selector(addTapped))
 
     }
