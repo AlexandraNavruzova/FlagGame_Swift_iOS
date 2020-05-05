@@ -86,7 +86,7 @@ class ViewController: UIViewController {
     }
     @objc func addTapped() {
         let ac = UIAlertController(title: "Your current score is \(score)", message: "Let's continue the game!", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Play again", style: .default, handler: askQuestion))
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
         present(ac, animated: true)
     }
 
