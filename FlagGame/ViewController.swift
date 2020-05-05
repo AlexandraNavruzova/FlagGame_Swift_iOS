@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
-    var questionsAsked = 8
+    var questionsAsked = 0
     let questionsLimit = 10
     
     override func viewDidLoad() {
